@@ -8,5 +8,7 @@ public class CharacterAnimator : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("MoveX", moveX);
+        float moveY = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("MoveY", moveY);
     }
 }
