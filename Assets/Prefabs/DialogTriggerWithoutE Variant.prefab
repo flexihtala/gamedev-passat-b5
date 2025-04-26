@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8665162265963509088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071485233367637443, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296157689499311197, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: fullDialogueText
+      value: "\u0414\u0436\u043E:\n\"\u0423\u0442\u0440\u043E, \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0435
+        \u0443\u0442\u0440\u043E, \u043D\u0430\u0434\u0435\u044E\u0441\u044C, \u0441
+        \u0421\u044C\u044E\u0437\u0435\u043D \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u0438\u043B\u0430
+        \u0437\u0430\u0432\u0442\u0440\u0430\u043A\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719390420110328567, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_Name
+      value: DialogTriggerWithoutE Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114389929307880731, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114389929307880731, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2346048567454746221, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+    - {fileID: 4296157689499311197, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8719390420110328567, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4139752114117529005}
+  m_SourcePrefab: {fileID: 100100000, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+--- !u!1 &90538496716011415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8719390420110328567, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+  m_PrefabInstance: {fileID: 8665162265963509088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4139752114117529005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90538496716011415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05181168d358d7f469bee2048bf1da0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  speakerNameText: {fileID: 0}
+  fullDialogueText: "\u0414\u0436\u043E:\n\"\u0423\u0442\u0440\u043E, \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0435
+    \u0443\u0442\u0440\u043E, \u043D\u0430\u0434\u0435\u044E\u0441\u044C, \u0441
+    \u0421\u044C\u044E\u0437\u0435\u043D \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u0438\u043B\u0430
+    \u0437\u0430\u0432\u0442\u0440\u0430\u043A\""

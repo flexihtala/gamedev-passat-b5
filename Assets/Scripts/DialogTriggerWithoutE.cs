@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTriggerWithoutE : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -17,20 +16,21 @@ public class DialogueTrigger : MonoBehaviour
     private List<string> speakers = new();
     private int currentIndex = 0;
     private bool dialogueStarted = false;
-    private bool onTrigger = false;
-    public bool isDialogShownOnce = false;
 
     private void Start()
     {
         ParseDialogue(fullDialogueText);
-        onTrigger = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        onTrigger = true;
+
+
         currentIndex = 0;
+        dialogueStarted = true;
+        dialoguePanel.SetActive(true);
+        ShowCurrentLine();
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -40,18 +40,10 @@ public class DialogueTrigger : MonoBehaviour
         dialogueStarted = false;
         dialoguePanel.SetActive(false);
         currentIndex = 0;
-        onTrigger = false;
     }
 
     private void Update()
     {
-        if (!dialogueStarted && Input.GetKeyDown(KeyCode.E) && onTrigger)
-        {
-            dialogueStarted = true;
-            dialoguePanel.SetActive(true);
-            ShowCurrentLine();
-            isDialogShownOnce = true;
-        }
         if (dialogueStarted && Input.GetKeyDown(KeyCode.Space))
             NextLine();
     }
