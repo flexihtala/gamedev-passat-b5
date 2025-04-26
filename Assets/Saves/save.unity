@@ -119,6 +119,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &294806074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8719390420110328567, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+  m_PrefabInstance: {fileID: 4458400024417233510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &294806079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294806074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67ee454e62ba0a48b890b6ef95e9c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageToShow: {fileID: 968985047}
+  heightAbovePlayer: 1.5
 --- !u!4 &376632491 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 670887353596275303, guid: 2a7d6a87aeb42d44cb7105dd98d26a15, type: 3}
@@ -173,14 +192,14 @@ RectTransform:
   m_GameObject: {fileID: 968985045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1352283866}
+  m_Father: {fileID: 1389904262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968985047
@@ -382,6 +401,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1389904262 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5713033522887612586, guid: 9ef85c2abd7ad0a4a8c0c229523811d0, type: 3}
+  m_PrefabInstance: {fileID: 7034320621211105196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1492029554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 7163882343735112227, guid: 8de17f4774aed724aa383d96cf05249a, type: 3}
       propertyPath: canvas
       value: 
-      objectReference: {fileID: 1352283869}
+      objectReference: {fileID: 0}
     - target: {fileID: 7163882343735112227, guid: 8de17f4774aed724aa383d96cf05249a, type: 3}
       propertyPath: imageToShow
       value: 
@@ -880,7 +904,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8719390420110328567, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 294806079}
   m_SourcePrefab: {fileID: 100100000, guid: fc022f6dab83cd0419162b6b066b6e8e, type: 3}
 --- !u!1001 &7034320621211105196
 PrefabInstance:
