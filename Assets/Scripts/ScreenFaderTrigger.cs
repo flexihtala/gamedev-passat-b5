@@ -9,7 +9,7 @@ public class ScreenFadeController : MonoBehaviour
     public float visibleDuration = 1f; // сколько держать затемнение
     private Coroutine fadeCoroutine;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (fadeCoroutine != null) StopCoroutine(fadeCoroutine);
         fadeCoroutine = StartCoroutine(FadeInAndOut());

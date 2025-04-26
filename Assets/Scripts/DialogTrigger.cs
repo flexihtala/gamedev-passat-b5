@@ -19,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
     private bool dialogueStarted = false;
     private bool onTrigger = false;
     public bool isDialogShownOnce = false;
+    public int countDialoges = 0;
 
     private void Start()
     {
@@ -51,6 +52,7 @@ public class DialogueTrigger : MonoBehaviour
             dialoguePanel.SetActive(true);
             ShowCurrentLine();
             isDialogShownOnce = true;
+            countDialoges++;
         }
         if (dialogueStarted && Input.GetKeyDown(KeyCode.Space))
             NextLine();

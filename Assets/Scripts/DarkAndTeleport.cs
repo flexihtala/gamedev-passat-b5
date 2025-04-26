@@ -1,14 +1,16 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class SpawnTeleportDestroy : MonoBehaviour
 {
-    public GameObject prefabToSpawn;    // Префаб, который нужно заспаунить
-    public Transform spawnPoint;        // Точка, где спаунить объект
-    public Transform teleportPoint;     // Точка, куда телепортировать игрока
-    public GameObject player;           // Игрок
+    public GameObject prefabToSpawn;
+    public Transform spawnPoint;
+    public Transform teleportPoint;
+    public GameObject player;
 
-    private GameObject spawnedObject;   // Ссылка на заспауненный объект
+    private GameObject spawnedObject;
+    private DialogueTrigger dialogue;
 
     public void SpawnTeleportAndDestroy()
     {
@@ -17,27 +19,42 @@ public class SpawnTeleportDestroy : MonoBehaviour
             Debug.LogWarning("Не все поля заполнены в SpawnTeleportDestroy!");
             return;
         }
+        
+        dialogue = GetComponent<DialogueTrigger>();
+        Debug.Log(dialogue.countDialoges);
+        if (dialogue.countDialoges > 1)
+            return;
+        
 
-        // 1. Спауним объект
+        // Спаун объекта
         spawnedObject = Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
 
-        // 2. Запускаем корутину для телепортации и удаления
-        StartCoroutine(TeleportAndDestroyAfterDelay(2f)); // 2 секунды задержка
+        // Запустить затемнение
+        var fadeController = spawnedObject.GetComponent<ScreenFadeController>();
+        if (fadeController != null)
+        {
+            fadeController.OnTriggerEnter2D(player.GetComponent<Collider2D>()); // вызываем метод начала затемнения (не OnTriggerEnter!)
+        }
+
+        // Стартуем корутину
+        StartCoroutine(TeleportAfterFade(fadeController));
     }
 
-    private IEnumerator TeleportAndDestroyAfterDelay(float delay)
+    private IEnumerator TeleportAfterFade(ScreenFadeController fadeController)
     {
-        yield return new WaitForSeconds(delay);
+        // Подождать пока затемнение полностью не закончится
+        // Допустим затемнение длится 2 секунды (можно подстроить)
+        yield return new WaitForSeconds(2f);
 
-        // 3. Телепортируем игрока
+        // Телепортировать игрока
         player.transform.position = teleportPoint.position;
         
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(2f);
 
-        // 4. Выключаем заспауненный объект
+        // Убрать затемняющий объект
         if (spawnedObject != null)
         {
-            spawnedObject.SetActive(false);
+            Destroy(spawnedObject);
         }
     }
 }
