@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="310ec93e-2eec-427f-afa5-1288deccf9bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saves/save.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saves/save.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DarkAndTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DarkAndTeleport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetFalse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetFalse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "d50353bf",
+    "git-widget-placeholder": "1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,7 +119,7 @@
       <workItem from="1745663999386" duration="61000" />
       <workItem from="1745664574591" duration="10503000" />
       <workItem from="1745683525853" duration="2964000" />
-      <workItem from="1745702637023" duration="1532000" />
+      <workItem from="1745702637023" duration="3781000" />
     </task>
     <task id="LOCAL-00001" summary="add camera + begin canvas">
       <option name="closed" value="true" />
