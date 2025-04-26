@@ -1,20 +1,33 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private Vector2 moveInput;
+    private PlayerInputActions inputActions;
+    private Rigidbody2D rb;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        // Получаем ввод по осям
-        float horizontal = Input.GetAxis("Horizontal"); // A/D или стрелки влево/вправо
-        float vertical = Input.GetAxis("Vertical");     // W/S или стрелки вверх/вниз
+        inputActions = new PlayerInputActions();
+        rb = GetComponent<Rigidbody2D>();
+    }
 
-        // Вектор направления движения
-        Vector3 movement = new Vector3(horizontal, vertical, 0f);
+    private void OnEnable()
+    {
+        inputActions.Player.Enable();
+        inputActions.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        inputActions.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+    }
 
-        // Двигаем игрока
-        transform.Translate(movement * (moveSpeed * Time.deltaTime), Space.World);
+    private void OnDisable()
+    {
+        inputActions.Player.Disable();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.fixedDeltaTime));
     }
 }
