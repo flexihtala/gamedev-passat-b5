@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="310ec93e-2eec-427f-afa5-1288deccf9bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Circle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DialogTrigger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DialogTrigger.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DialogTrigger.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DialogTrigger.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DisappearTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DisappearTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;tilemap-and-move-actions&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pressE&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,7 +112,9 @@
       <updated>1745655150980</updated>
       <workItem from="1745655158642" duration="2772000" />
       <workItem from="1745659006792" duration="2719000" />
-      <workItem from="1745662553065" duration="296000" />
+      <workItem from="1745662553065" duration="1408000" />
+      <workItem from="1745663999386" duration="61000" />
+      <workItem from="1745664574591" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="add camera + begin canvas">
       <option name="closed" value="true" />

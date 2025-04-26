@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4456920092530380894}
   - component: {fileID: 288985292811106478}
   - component: {fileID: 6318125249736775227}
+  - component: {fileID: 7163882343735112227}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa5302845ecbf242bf8e6c7c16b6b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7163882343735112227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767644199676381649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67ee454e62ba0a48b890b6ef95e9c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageToShow: {fileID: 0}
