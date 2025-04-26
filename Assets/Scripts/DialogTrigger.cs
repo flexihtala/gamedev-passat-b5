@@ -1,11 +1,12 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialoguePanel;      // UI панель с диалогом
-    public Text dialogueText;             // UI текст внутри панели
+    public TextMeshProUGUI dialogueText;             // UI текст внутри панели
     [TextArea(3, 10)]
     public string dialogueContent;        // Текст диалога
 
