@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="310ec93e-2eec-427f-afa5-1288deccf9bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev-passat-b5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroySelected.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DestroySelected.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShowMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShowMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Chef/Chef1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Chef/Chef1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Chef/Chef2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Chef/Chef2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DarkAndTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DarkAndTeleport.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogTriggerWithoutE.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DogRun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RunnerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TurnOffComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "chef",
+    "git-widget-placeholder": "a76e67f2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
