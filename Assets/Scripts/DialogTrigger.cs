@@ -13,9 +13,9 @@ public class DialogueTrigger : MonoBehaviour
     [TextArea(5, 20)]
     public string fullDialogueText;
 
-    private List<string> lines = new();
+    public List<string> lines = new();
     private List<string> speakers = new();
-    private int currentIndex = 0;
+    public int currentIndex = 0;
     private bool dialogueStarted = false;
     private bool onTrigger = false;
     public bool isDialogShownOnce = false;
@@ -48,6 +48,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!dialogueStarted && Input.GetKeyDown(KeyCode.E) && onTrigger)
         {
+            ParseDialogue(fullDialogueText);
             dialogueStarted = true;
             dialoguePanel.SetActive(true);
             ShowCurrentLine();
