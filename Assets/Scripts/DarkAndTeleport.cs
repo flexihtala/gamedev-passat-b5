@@ -49,7 +49,7 @@ public class SpawnTeleportDestroy : MonoBehaviour
         // Телепортировать игрока
         player.transform.position = teleportPoint.position;
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
 
         // Убрать затемняющий объект
         if (spawnedObject != null)
