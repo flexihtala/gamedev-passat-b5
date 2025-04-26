@@ -18,13 +18,11 @@ public class DialogueTrigger : MonoBehaviour
     private int currentIndex = 0;
     private bool dialogueStarted = false;
     private bool onTrigger = false;
-    private Image dialoguePanelImage;
 
     private void Start()
     {
         ParseDialogue(fullDialogueText);
         onTrigger = false;
-        dialoguePanelImage = dialoguePanel.GetComponent<Image>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
