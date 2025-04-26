@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YouDoNotGoBeforeWife Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 90538496716011415, guid: b70d4701004e7a444894c76721736b16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4139752114117529005, guid: b70d4701004e7a444894c76721736b16, type: 3}
       propertyPath: fullDialogueText
       value: " :\n\"\u0421\u043D\u0430\u0447\u0430\u043B\u0430 \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438
