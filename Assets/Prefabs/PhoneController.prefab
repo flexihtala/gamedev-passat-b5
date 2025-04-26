@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6666569453505642045}
   - component: {fileID: 8883584101618657975}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PhoneController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,5 +49,5 @@ MonoBehaviour:
   visiblePosition: {x: -200, y: 400}
   moveSpeed: 1500
   visibleDuration: 3
-  messagesContainer: {fileID: 0}
-  messagePrefab: {fileID: 0}
+  messagesContainer: {fileID: 3193309309715496087, guid: b2315cd618e8c5f40898db8dba261782, type: 3}
+  messagePrefab: {fileID: 7322096194122749175, guid: 4bfb6c3c6158b1f48a807400ceb7998e, type: 3}

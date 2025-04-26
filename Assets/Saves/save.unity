@@ -540,7 +540,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3197755543751634620, guid: 055cb4d6d4b178847b5eb02dd1497060, type: 3}
       propertyPath: m_Name
-      value: GameObject
+      value: PhoneController
       objectReference: {fileID: 0}
     - target: {fileID: 6666569453505642045, guid: 055cb4d6d4b178847b5eb02dd1497060, type: 3}
       propertyPath: m_LocalPosition.x

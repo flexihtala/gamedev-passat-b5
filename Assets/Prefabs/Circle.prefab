@@ -160,5 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67ee454e62ba0a48b890b6ef95e9c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToShow: {fileID: 0}
+  imageToShow: {fileID: 4686748902409403305, guid: a7d53280e68488d4eb55ec84a9a197ac, type: 3}
   heightAbovePlayer: 30
