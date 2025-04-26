@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     private Vector2 moveInput;
     private PlayerInputActions inputActions;
     private Rigidbody2D rb;
+    
+    private bool isForcedRunning = false;
+    private Vector2 forcedRunDirection;
+    private float forcedRunSpeed;
 
     private void Awake()
     {
@@ -28,6 +32,24 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.fixedDeltaTime));
+        if (isForcedRunning)
+            rb.MovePosition(rb.position + forcedRunDirection * (forcedRunSpeed * Time.fixedDeltaTime));
+        else
+            rb.MovePosition(rb.position + moveInput * (moveSpeed * Time.fixedDeltaTime));
+    }
+    
+    public void StartForcedRun(Vector2 direction, float speed)
+    {
+        isForcedRunning = true;
+        forcedRunDirection = direction.normalized;
+        forcedRunSpeed = speed;
+        inputActions.Player.Disable(); // Отключаем управление игрока
+    }
+    
+    public void StopForcedRun()
+    {
+        isForcedRunning = false;
+        inputActions.Player.Enable(); // Возвращаем обычное управление
+        moveInput = Vector2.zero;     // Останавливаем движение
     }
 }
