@@ -1,9 +1,11 @@
-using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ObjectDestroyer : MonoBehaviour
 {
     public GameObject targetObject;
+    public UnityEvent onTriggerExitAction; // Тут в инспекторе настраиваем что делать
+
     private DialogueTrigger d;
 
     private void Start()
@@ -13,7 +15,9 @@ public class ObjectDestroyer : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (d.isDialogShownOnce)
-            targetObject.SetActive(false);
+        if (d != null && d.isDialogShownOnce)
+        {
+            onTriggerExitAction?.Invoke();
+        }
     }
 }
