@@ -8,7 +8,8 @@ public class PhoneTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("AddNewMassage")) return;
+        if (!other.CompareTag("AddNewMassage") && !other.CompareTag("Player"))
+            return;
         phoneController.ShowMessage(messageText);
         Destroy(gameObject); // Если надо, чтобы триггер исчезал после активации
     }
