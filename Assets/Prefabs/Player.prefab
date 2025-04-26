@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6033371040642082236}
   - component: {fileID: 5406356599133767336}
   - component: {fileID: 5295447005870414888}
-  - component: {fileID: 1798927076757065344}
   - component: {fileID: 3906801942703837707}
+  - component: {fileID: 7700097642167831858}
+  - component: {fileID: 249609662553448124}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2966200626249415253, guid: 8841bc3a130f5a14cbcdd51a9731ec4a, type: 3}
+  m_Sprite: {fileID: -8490019932750068655, guid: e2696d053eb2ee540ac6eab55b82c7d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,7 +179,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &1798927076757065344
+--- !u!114 &3906801942703837707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576059659289500320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b040aeedb605a41ada4c4e9e092e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8047341542882727472}
+  idleSprite: {fileID: -2966200626249415253, guid: 8841bc3a130f5a14cbcdd51a9731ec4a, type: 3}
+  walkLeftSprite: {fileID: 1341877325474041833, guid: 2d359101dfb0eaa4e864c4d249318ff0, type: 3}
+  walkRightSprite: {fileID: 1768679433190182986, guid: 61db13b25bb27e9499847d7611724f42, type: 3}
+--- !u!95 &7700097642167831858
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -200,7 +217,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3906801942703837707
+--- !u!114 &249609662553448124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,6 +230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8047341542882727472}
-  idleSprite: {fileID: -2966200626249415253, guid: 8841bc3a130f5a14cbcdd51a9731ec4a, type: 3}
+  idleSprite: {fileID: -8490019932750068655, guid: e2696d053eb2ee540ac6eab55b82c7d6, type: 3}
   walkLeftSprite: {fileID: 1341877325474041833, guid: 2d359101dfb0eaa4e864c4d249318ff0, type: 3}
   walkRightSprite: {fileID: 1768679433190182986, guid: 61db13b25bb27e9499847d7611724f42, type: 3}
