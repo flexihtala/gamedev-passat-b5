@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6033371040642082236}
   - component: {fileID: 5406356599133767336}
   - component: {fileID: 5295447005870414888}
-  - component: {fileID: 7700097642167831858}
+  - component: {fileID: 879904639458462780}
+  - component: {fileID: 2379548049780873414}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4576059659289500320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.98, y: 12.12, z: 0}
+  m_LocalPosition: {x: -0.503, y: 0.397, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: -8490019932750068655, guid: e2696d053eb2ee540ac6eab55b82c7d6, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2966200626249415253, guid: 8841bc3a130f5a14cbcdd51a9731ec4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,7 +139,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.019429207, y: -0.46489954}
+  m_Offset: {x: 0, y: -0.015488356}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -148,7 +149,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6308422, y: 0.76743793}
+  m_Size: {x: 1, y: 1.6114311}
   m_EdgeRadius: 0
 --- !u!50 &5295447005870414888
 Rigidbody2D:
@@ -177,7 +178,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &7700097642167831858
+--- !u!95 &879904639458462780
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -187,7 +188,7 @@ Animator:
   m_GameObject: {fileID: 4576059659289500320}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9fb7f385abead914c92ec5abcaa6db50, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6c185b338f63e5646b588b0a61607744, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -199,3 +200,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2379548049780873414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576059659289500320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b040aeedb605a41ada4c4e9e092e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8047341542882727472}
+  idleSprite: {fileID: -2966200626249415253, guid: 8841bc3a130f5a14cbcdd51a9731ec4a, type: 3}
+  walkLeftSprite: {fileID: 1341877325474041833, guid: 2d359101dfb0eaa4e864c4d249318ff0, type: 3}
+  walkRightSprite: {fileID: 1768679433190182986, guid: 61db13b25bb27e9499847d7611724f42, type: 3}

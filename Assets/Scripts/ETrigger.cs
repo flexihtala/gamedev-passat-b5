@@ -30,11 +30,10 @@ public class ShowImageOnTrigger : MonoBehaviour
         if (player == null)
             return;
         
-        var playerPos = player.position;
-        
-        var midPoint = playerPos + new Vector3(0, heightAbovePlayer, 0);
-        
-        imageToShow.transform.position = midPoint;
+        Vector3 worldPosition = player.position + new Vector3(0, heightAbovePlayer, 0);
+
+        // Переводим мировую позицию в позицию на экране
+        Vector3 screenPosition = Camera.main.WorldToScreenPoint(worldPosition);
         
     }
 }
