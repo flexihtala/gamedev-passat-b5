@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3211238632208017382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 633826747374542868, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 633826747374542868, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.117387
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.719942
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 815382007317891881, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666316827376586887, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: imageToShow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567049553961167088, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e549d352fadb9d943a88399d34e3f1ce, type: 2}
+    - target: {fileID: 4472491218155244215, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4472491218155244215, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4472491218155244215, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: speakerNameText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4472491218155244215, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: fullDialogueText
+      value: "\u041D\u0430\u0447\u0430\u043B\u044C\u043D\u0438\u043A: \n\"\u0414\u0436\u043E,
+        \u0442\u0432\u043E\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043D\u0435
+        \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442 \u043D\u0430\u043C \u043F\u0440\u0438\u0431\u044B\u043B\u0438,
+        \u0430 \u0434\u0435\u0442\u0430\u043B\u044C \u0441\u0434\u0435\u043B\u0430\u043D\u043D\u0430\u044F 
+        \u0442\u043E\u0431\u043E\u0439 \u0432 \u043F\u0440\u043E\u0448\u043B\u044B\u0439
+        \u0440\u0430\u0437, \u0432\u0435\u0440\u043D\u0443\u043B\u0430\u0441\u044C
+        \u043D\u0430\u043C \u043D\u0430 \u0432\u043E\u0437\u0432\u0440\u0430\u0442.
+        \u0422\u044B \u043E\u0448\u0442\u0440\u0430\u0444\u043E\u0432\u0430\u043D
+        \u043D\u0430 1488 \u043D\u043E\u0432\u043E\u0437\u0435\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u0439
+        \u0442\u0443\u0433\u0440\u0438\u043A\u043E\u0432\"\n\r\n\u0414\u0436\u043E:\n\"\u2026\"\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491057896440699854, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491057896440699854, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931393291787889649, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d9aa6b4dbd67aa942945a369fafea8f6, type: 3}
+    - target: {fileID: 8975393522199237661, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      propertyPath: m_Name
+      value: Chef Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8975393522199237661, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1417513168885649575}
+  m_SourcePrefab: {fileID: 100100000, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+--- !u!1 &5773505181224416251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8975393522199237661, guid: 7fc519b83ac7df54e8db6e9ede93a12b, type: 3}
+  m_PrefabInstance: {fileID: 3211238632208017382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1417513168885649575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773505181224416251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fbaa62cc874784f8d2ce7c49213d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 5773505181224416251}
+  onTriggerExitAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SpawnTeleportDestroy, Assembly-CSharp
+        m_MethodName: SpawnTeleportAndDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
