@@ -1,17 +1,23 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    [Header("Dialogue Settings")]
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI speakerNameText;
 
     [TextArea(5, 20)]
     public string fullDialogueText;
+
+    [Header("Line Settings")]
+    [SerializeField] private int maxCharactersPerLine = 100;
+
+    [Header("Trigger Settings")]
+    [SerializeField] private bool isOnE = true; // ⬅⬅⬅ Новая галочка: запускать диалог по кнопке E или сразу
 
     public List<string> lines = new();
     private List<string> speakers = new();
@@ -24,7 +30,6 @@ public class DialogueTrigger : MonoBehaviour
     private void Start()
     {
         ParseDialogue(fullDialogueText);
-        onTrigger = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,12 +37,16 @@ public class DialogueTrigger : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         onTrigger = true;
         currentIndex = 0;
+
+        if (!isOnE)
+        {
+            StartDialogue();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-
         dialogueStarted = false;
         dialoguePanel.SetActive(false);
         currentIndex = 0;
@@ -46,17 +55,25 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (!dialogueStarted && Input.GetKeyDown(KeyCode.E) && onTrigger)
+        if (isOnE && !dialogueStarted && Input.GetKeyDown(KeyCode.E) && onTrigger)
         {
-            ParseDialogue(fullDialogueText);
-            dialogueStarted = true;
-            dialoguePanel.SetActive(true);
-            ShowCurrentLine();
-            isDialogShownOnce = true;
-            countDialoges++;
+            StartDialogue();
         }
+
         if (dialogueStarted && Input.GetKeyDown(KeyCode.Space))
+        {
             NextLine();
+        }
+    }
+
+    private void StartDialogue()
+    {
+        ParseDialogue(fullDialogueText);
+        dialogueStarted = true;
+        dialoguePanel.SetActive(true);
+        ShowCurrentLine();
+        isDialogShownOnce = true;
+        countDialoges++;
     }
 
     private void NextLine()
@@ -86,7 +103,7 @@ public class DialogueTrigger : MonoBehaviour
         speakers.Clear();
 
         var rawLines = text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-        var currentSpeaker = "";
+        string currentSpeaker = "";
 
         foreach (var rawLine in rawLines)
         {
@@ -98,9 +115,36 @@ public class DialogueTrigger : MonoBehaviour
             }
             else if (trimmed.StartsWith("\"") && trimmed.EndsWith("\""))
             {
-                lines.Add(trimmed.Trim('"'));
-                speakers.Add(currentSpeaker);
+                var dialogueLine = trimmed.Trim('\"');
+
+                List<string> brokenLines = BreakLongLine(dialogueLine, maxCharactersPerLine);
+                foreach (var line in brokenLines)
+                {
+                    lines.Add(line);
+                    speakers.Add(currentSpeaker);
+                }
             }
         }
+    }
+
+    private List<string> BreakLongLine(string text, int maxLength)
+    {
+        List<string> result = new();
+
+        while (text.Length > maxLength)
+        {
+            int breakIndex = text.LastIndexOf(' ', maxLength);
+            if (breakIndex == -1) breakIndex = maxLength;
+
+            result.Add(text.Substring(0, breakIndex));
+            text = text.Substring(breakIndex).Trim();
+        }
+
+        if (!string.IsNullOrEmpty(text))
+        {
+            result.Add(text);
+        }
+
+        return result;
     }
 }
